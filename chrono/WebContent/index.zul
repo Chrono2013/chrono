@@ -1,6 +1,5 @@
 <?page title="Auto Generated index.zul"?>
 <window title="Hello World!!" border="normal" width="200px">
-commitmaniac!!!!kkhgccc
+commitmaniac!!! test 1 2 1 2...
 <label value="You are using: ${desktop.webApp.version}"/>
-sqsqsqssqssqs
 </window>
