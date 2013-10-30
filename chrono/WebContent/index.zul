@@ -1,5 +1,50 @@
 <?page title="Auto Generated index.zul"?>
-<window title="Hello World!!" border="normal" width="200px">
-commitmaniac!!! test 1 2 1 2...
-<label value="You are using: ${desktop.webApp.version}"/>
+
+<zk>
+
+<zscript><![CDATA[
+    List Events = new ArrayList();
+    for (int i = 1; i <= 5; i++) {
+        Events.add("Event #" + i);
+    }   
+]]></zscript>
+
+<window title="Project Chrono v1.0" border="normal" width="100%">
+
+	<div id="barMenu">
+	
+		<groupbox>
+			<label value=" Evenement : "/>
+			<listbox mold="select" id="listboxEvent">
+	    	   <listitem label="Event 1" />
+	    	   <listitem label="Event 2" />
+	    	   <listitem label="Event 3" />
+	    	   <listitem label="Event 4" />
+	    	 </listbox>
+	    	 <button id="newEvent" onClick="" image="./image/icone-plus.png" />
+
+			<label value=" Course : "/>
+			<listbox mold="select" id="listboxCourse">
+	    	   <listitem label="Course 1" />
+	    	   <listitem label="Course 2" />
+	    	   <listitem label="Course 3" />
+	    	   <listitem label="Course 4" />
+	    	 </listbox>
+	    	 <button id="newCourse" onClick="" image="./image/icone-plus.png" />
+
+			<label value=" Voiture : "/>
+			<listbox mold="select" id="listboxVoiture">
+	    	   <listitem label="Voiture 1" />
+	    	   <listitem label="Voiture 2" />
+	    	   <listitem label="Voiture 3" />
+	    	   <listitem label="Voiture 4" />
+	    	 </listbox>
+	    	 <button id="newVoiture" image="./image/icone-plus.png" />
+	    	 
+	    	 <button label="Depart/Fin Course" id="StarEndRace" />
+		</groupbox>
+		
+	</div>
+
 </window>
+</zk>
