@@ -44,30 +44,30 @@
 	<space/>
 	<grid>
 		<columns>
-			<column width="25%" label="TRUC">
+			<column width="25%" label="">
 				<div align="left">
 					<window title="Voiture Suivie :" border="normal">
-						<div>
+						<div align="center">
 						<button label="TOP" id="topButton"/>
 						<label value="Temps : 3 : 12 : 36"/>
 						</div>
-						<div>
+						<div align="center">
 						<button label="TOP Arrêt/Départ Stand" id="topStandButton"/>
 						</div>
-						<div>
+						<div align="center">
 						<label value="Chrono Moyen : "/>
 						<label value="4 : 12 : 36"/>
 						</div>
 					</window>
+					<separator/>
+					<div align="center">
 					<button image="./image/icone-plus.png" label="Ajouter une voiture" id="ajoutVoiture"/>
+					</div>
 				</div>
 			</column>
 			<column width="75%"/>
 		</columns>
 	</grid>
-
-	
-	
 
 </window>
 </zk>
