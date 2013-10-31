@@ -3,17 +3,21 @@ package chrono;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
 import org.zkoss.zk.ui.select.annotation.Wire;
-import org.zkoss.zul.Button;
-import org.zkoss.zul.Window;
+import org.zkoss.zul.*;
 
 public class Controlleur extends SelectorComposer<Window> {
 	
 	@Wire
-	Button StarEndRace;
+	Listbox listboxEvent;
+	@Wire
+	Listbox listboxCourse;
+	@Wire
+	Listbox listboxVoiture;
 	
-	@Listen("onClick=#newEvent")
-	public void hidden(){
-		StarEndRace.setVisible(false);
+	
+	@Listen("onSelect=#listboxEvent")
+	public void test(){
+		System.out.println("1");
 	}
 	
 

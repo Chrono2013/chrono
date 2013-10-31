@@ -9,7 +9,7 @@
     }   
 ]]></zscript>
 
-<window title="Project Chrono v1.0" border="normal" width="100%">
+<window title="Project Chrono v1.0" border="normal" width="100%" apply="chrono.Controlleur">
 
 	<div id="barMenu">
 	
@@ -21,7 +21,7 @@
 	    	   <listitem label="Event 3" />
 	    	   <listitem label="Event 4" />
 	    	 </listbox>
-	    	 <button id="newEvent" onClick="" image="./image/icone-plus.png" />
+	    	 <image src="./image/icone-plus.png" id="newEventPic"/>
 
 			<label value=" Course : "/>
 			<listbox mold="select" id="listboxCourse">
@@ -30,7 +30,7 @@
 	    	   <listitem label="Course 3" />
 	    	   <listitem label="Course 4" />
 	    	 </listbox>
-	    	 <button id="newCourse" onClick="" image="./image/icone-plus.png" />
+	    	 <image src="./image/icone-plus.png" id="newCoursePic"/>
 
 			<label value=" Voiture : "/>
 			<listbox mold="select" id="listboxVoiture">
@@ -39,9 +39,9 @@
 	    	   <listitem label="Voiture 3" />
 	    	   <listitem label="Voiture 4" />
 	    	 </listbox>
-	    	 <button id="newVoiture" image="./image/icone-plus.png" />
+	    	 <image src="./image/icone-plus.png" id="newVoiturePic"/>
 	    	 
-	    	 <button label="Depart/Fin Course" id="StarEndRace" />
+	    	 <button label="Depart/Fin Course" id="StartEndRace" />
 		</groupbox>
 		
 	</div>
