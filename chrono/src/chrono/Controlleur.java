@@ -13,11 +13,20 @@ public class Controlleur extends SelectorComposer<Window> {
 	Listbox listboxCourse;
 	@Wire
 	Listbox listboxVoiture;
+	@Wire
+	Button StartEndRace;
 	
 	
-	@Listen("onSelect=#listboxEvent")
-	public void test(){
-		System.out.println("1");
+	@Listen("onSelect=#listboxEvent;onSelect=#listboxCourse;onSelect=#listboxVoiture")
+	public void testEvent(){
+		if(listboxEvent.getSelectedItem() != null &&
+				listboxCourse.getSelectedItem() != null &&
+				listboxVoiture.getSelectedItem() != null){
+			StartEndRace.setDisabled(false);
+		}
+		else{
+			StartEndRace.setDisabled(true);
+		}
 	}
 	
 

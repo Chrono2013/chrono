@@ -11,40 +11,63 @@
 
 <window title="Project Chrono v1.0" border="normal" width="100%" apply="chrono.Controlleur">
 
-	<div id="barMenu">
-	
-		<groupbox>
-			<label value=" Evenement : "/>
-			<listbox mold="select" id="listboxEvent">
-	    	   <listitem label="Event 1" />
-	    	   <listitem label="Event 2" />
-	    	   <listitem label="Event 3" />
-	    	   <listitem label="Event 4" />
-	    	 </listbox>
-	    	 <image src="./image/icone-plus.png" id="newEventPic"/>
+	<div id="barMenu" align="center">
+		<label value=" Evenement : "/>
+		<listbox mold="select" id="listboxEvent">
+    	   <listitem label="Event 1" />
+    	   <listitem label="Event 2" />
+    	   <listitem label="Event 3" />
+    	   <listitem label="Event 4" />
+    	 </listbox>
+    	 <button image="./image/icone-plus.png" id="newEvent"/>
 
-			<label value=" Course : "/>
-			<listbox mold="select" id="listboxCourse">
-	    	   <listitem label="Course 1" />
-	    	   <listitem label="Course 2" />
-	    	   <listitem label="Course 3" />
-	    	   <listitem label="Course 4" />
-	    	 </listbox>
-	    	 <image src="./image/icone-plus.png" id="newCoursePic"/>
+		<label value=" Course : "/>
+		<listbox mold="select" id="listboxCourse">
+    	   <listitem label="Course 1" />
+    	   <listitem label="Course 2" />
+    	   <listitem label="Course 3" />
+    	   <listitem label="Course 4" />
+    	 </listbox>
+    	 <button image="./image/icone-plus.png" id="newCourse"/>
 
-			<label value=" Voiture : "/>
-			<listbox mold="select" id="listboxVoiture">
-	    	   <listitem label="Voiture 1" />
-	    	   <listitem label="Voiture 2" />
-	    	   <listitem label="Voiture 3" />
-	    	   <listitem label="Voiture 4" />
-	    	 </listbox>
-	    	 <image src="./image/icone-plus.png" id="newVoiturePic"/>
-	    	 
-	    	 <button label="Depart/Fin Course" id="StartEndRace" />
-		</groupbox>
-		
+		<label value=" Voiture : "/>
+		<listbox mold="select" id="listboxVoiture">
+    	   <listitem label="Voiture 1" />
+    	   <listitem label="Voiture 2" />
+    	   <listitem label="Voiture 3" />
+    	   <listitem label="Voiture 4" />
+    	 </listbox>
+    	 <button image="./image/icone-plus.png" id="newVoiture"/>
+    	 
+    	 <button label="Depart/Fin Course" id="StartEndRace" disabled="true"/>
 	</div>
+	<space/>
+	<grid>
+		<columns>
+			<column width="25%" label="TRUC">
+				<div align="left">
+					<window title="Voiture Suivie :" border="normal">
+						<div>
+						<button label="TOP" id="topButton"/>
+						<label value="Temps : 3 : 12 : 36"/>
+						</div>
+						<div>
+						<button label="TOP Arrêt/Départ Stand" id="topStandButton"/>
+						</div>
+						<div>
+						<label value="Chrono Moyen : "/>
+						<label value="4 : 12 : 36"/>
+						</div>
+					</window>
+					<button image="./image/icone-plus.png" label="Ajouter une voiture" id="ajoutVoiture"/>
+				</div>
+			</column>
+			<column width="75%"/>
+		</columns>
+	</grid>
+
+	
+	
 
 </window>
 </zk>
